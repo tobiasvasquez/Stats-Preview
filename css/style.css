@@ -36,20 +36,22 @@ body{
     color: hsla(0, 0%, 100%, 0.75);
     text-align: center;
     width: 90%;
+    line-height: 35px;
 }
-.card__data{
-    margin-top: 30px;
+.card__data__info{
+    margin-top: 20px;
     text-align: center;
-}
-.card__data--color{
     color: white;
+}
+.card__data__info{
     font-family: 'Inter', sans-serif;
 }
-.card__data__desc{
+.card__data__info__desc{
     color: white;
     font-family: 'Lexend Deca', sans-serif;
     text-transform: uppercase;
     margin-top: 5px;
+    font-weight: 400;
 }
 .attribution { 
     font-size: 12px; 
@@ -59,4 +61,37 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+@media(min-width: 460px){
+    .main-card{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: 100px auto 0px auto;
+        padding: 0px;
+    }
+    .card__title{
+        width: 45%;
+        margin-top: 50px;
+        text-align: left;
+        font-size: 30px;
+    }
+    .card__description{
+        width: 45%;
+        text-align: left;
+    }
+    .card__data{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 50px auto 0px  auto;
+    }
+    .card__data__info{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+    }
+    .card__data__info__desc{
+        text-transform: uppercase;
+    }
 }
